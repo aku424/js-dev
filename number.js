@@ -1,19 +1,6 @@
 ////////////////////////////////////////////////////
 //電卓１
 ////////////////////////////////////////////////////
-// const no1 =document.getElementById('no1');
-// const no2 =document.getElementById('no2');
-// const no3 =document.getElementById('no3');
-// const no4 =document.getElementById('no4');
-// const no5 =document.getElementById('no5');
-// const no6 =document.getElementById('no6');
-// const no7 =document.getElementById('no7');
-// const no8 =document.getElementById('no8');
-// const no9 =document.getElementById('no9');
-// const pul =document.getElementById('pul');
-// const min =document.getElementById('min');
-// const del =document.getElementById('del');
-// const equ =document.getElementById('equal');
 
 let total_count = 0;
 let display_no = "";
@@ -33,7 +20,7 @@ function counter_del() {
 function calc(date) {
     if (flg === 0){
         flg = 1;
-        work =   +total_count + myCalc +display_no;
+        work = total_count + myCalc +display_no;
         console.log(work);
         total_count = eval(work);
         display_no = "";
@@ -46,6 +33,55 @@ function calc(date) {
         myCalc = date;
     }
 
+}
+
+////////////////////////////////////////////////////
+//電卓２
+////////////////////////////////////////////////////
+
+const display = document.getElementById('den_2--display');
+let dis_no = '';
+let flag = 1;
+let total = 0;
+let calcMe = '+';
+
+//数字を押した時の処理
+function counter2(num) {
+    flag = 0;
+    dis_no += num;
+    display.innerText = dis_no;
+}
+
+//
+function count_cal(cal) {
+    if (flag === 0) {
+        flag = 1;
+        works = total + calcMe +dis_no;
+        console.log(works);
+        dis_no = "";
+        total = eval(works);
+        display.innerText = total;
+    }else{
+        flag = 1;
+    }
+    if (cal === '=') {
+        display.innerText = total;
+        total = 0;
+        calMe = '+';
+        dis_no = '';
+        flag = 1;
+    }else{
+        calcMe = cal;
+    }
+}
+
+//delを押した後の処理
+function count_del() {
+    flag = 1;
+    dis_no = '';
+    total = 0;
+    calcMe = '+';
+    display.innerText = 0;
 }
 
 ////////////////////////////////////////////////////
