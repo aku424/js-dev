@@ -3,11 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
     <title>javascript training</title>
 </head>
 <body>
-    <script src="./number"></script>
-    <script src="./janken.js"></script>
+
+    <section class="den">
+        <h2 class="title">電卓</h2>
+        <div class="den__main">
+            <h3 id="den__main--display" class="den__main--display">0</h3>
+            <div class="den__main--keyboard">
+                <p id="no1" class="den__main--keyboard-item" onclick="counter(1)">1</p>
+                <p id="no2" class="den__main--keyboard-item" onclick="counter(2)">2</p>
+                <p id="no3" class="den__main--keyboard-item" onclick="counter(3)">3</p>
+                <p id="no4" class="den__main--keyboard-item" onclick="counter(4)">4</p>
+                <p id="no5" class="den__main--keyboard-item" onclick="counter(5)">5</p>
+                <p id="no6" class="den__main--keyboard-item" onclick="counter(6)">6</p>
+                <p id="no7" class="den__main--keyboard-item" onclick="counter(7)">7</p>
+                <p id="no8" class="den__main--keyboard-item" onclick="counter(8)">8</p>
+                <p id="no9" class="den__main--keyboard-item" onclick="counter(9)">9</p>
+                <p id="pul" class="den__main--keyboard-item" onclick="calc('+')">+</p>
+                <p id="no0" class="den__main--keyboard-item" onclick="counter(0)">0</p>
+                <p id="min" class="den__main--keyboard-item" onclick="calc('-')">-</p>
+                <p id="equal" class="den__main--keyboard-item" onclick="calc('=')">=</p>
+                <p id="del" class="den__main--keyboard-item" onclick="counter_del()">del</p>
+                <p id="" class="den__main--keyboard-item"></p>
+            </div>
+        </div>
+    </section>
+    <section class="den">
+        <h2 class="title">電卓2</h2>
+        <div class="den__main">
+            <h3 id="den_2--display" class="den__main--display">0</h3>
+            <div class="den__main--keyboard">
+                <p id="" class="den__main--keyboard-item" onclick="counter2(1)">1</p>
+                <p id="" class="den__main--keyboard-item" onclick="counter2(2)">2</p>
+                <p id="" class="den__main--keyboard-item" onclick="counter2(3)">3</p>
+                <p id="" class="den__main--keyboard-item" onclick="counter2(4)">4</p>
+                <p id="" class="den__main--keyboard-item" onclick="counter2(5)">5</p>
+                <p id="" class="den__main--keyboard-item" onclick="counter2(6)">6</p>
+                <p id="" class="den__main--keyboard-item" onclick="counter2(7)">7</p>
+                <p id="" class="den__main--keyboard-item" onclick="counter2(8)">8</p>
+                <p id="" class="den__main--keyboard-item" onclick="counter2(9)">9</p>
+                <p id="" class="den__main--keyboard-item" onclick="count_cal('+')">+</p>
+                <p id="" class="den__main--keyboard-item" onclick="counter2(0)">0</p>
+                <p id="" class="den__main--keyboard-item" onclick="count_cal('-')">-</p>
+                <p id="" class="den__main--keyboard-item" onclick="count_cal('/')">➗</p>
+                <p id="" class="den__main--keyboard-item" onclick="count_cal('*')">×</p>
+                <p id="" class="den__main--keyboard-item" onclick="count_cal('=')">=</p>
+                <p id="" class="den__main--keyboard-item" onclick="count_del()">del</p>
+                <p id="" class="den__main--keyboard-item"></p>
+            </div>
+        </div>
+    </section>
+    <section class="counter">
+        <h2 class="title">counter</h2>
+        <div class="den__main">
+            <h3 id="counter__main--display" class="den__main--display counter__main--display">0</h3>
+            <button id="c-btn">count up</button>
+            <button id="c-del">count stop</button>
+        </div>
+    </section>
+    <section class="counter1">
+        <p id="counter1-display" class="counter__display common-style">0</p>
+        <p id="counter1_btn" class="counter1__btn common-style">タップ</p>
+    </section>
+    <script src="./number.js"></script>
+    <!-- <script src="./janken.js"></script> -->
 </body>
 </html>
 

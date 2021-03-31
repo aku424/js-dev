@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.den {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.den .title {
+  text-align: center;
+}
+
+.den .den__main .den__main--display {
+  text-align: center;
+  padding: 5px 2px;
+  border: 1px solid #000;
+}
+
+.den .den__main .den__main--keyboard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.den .den__main .den__main--keyboard-item {
+  line-height: 100px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100px;
+          flex: 0 0 100px;
+  text-align: center;
+  border: 1px solid #000;
+  margin: 0;
+}
+
+.counter {
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.counter1 {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.common-style {
+  text-align: center;
+  border: 1px solid #000;
+  font-weight: bold;
+}
+
+.counter__display {
+  line-height: 60px;
+  font-size: 20px;
+  color: tomato;
+}
+
+.counter1__btn {
+  padding: 5px 20px;
+  font-size: 16px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.counter1__btn:hover {
+  cursor: pointer;
+  color: tomato;
+  opacity: .7;
+}
+/*# sourceMappingURL=style.css.map */
